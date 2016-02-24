@@ -5,10 +5,10 @@
  * csvToArray function I think I found on php.net
  */
 
-header('Content-type: application/json');
-
+header("Content-type: application/json; charset=utf-8");
 // Set your CSV feed
-$feed = $_FILES['file']['tmp_name';
+$feed = $_FILES['file']['tmp_name'];
+// $feed = 'data_for_plot.utf8';
 
 // Arrays we'll use later
 $keys = array();
