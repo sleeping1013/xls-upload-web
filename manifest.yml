@@ -1,0 +1,6 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: xls-web-${random-word}
+  name: xls-web
+  memory: 64M
