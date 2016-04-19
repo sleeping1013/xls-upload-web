@@ -1,11 +1,4 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-# import cgitb
-# cgitb.enable()
-
-print "Content-Type: text/html"     # HTML is following
-print                               # blank line, end of headers
-print "<TITLE>CGI script output</TITLE>"
-print "<H1>This is my first CGI script</H1>"
-print "Hello, world!"
+#!/bin/sh
+printf 'Content-Type: text/plain\r\n'
+printf '\r\n'
+echo "hello world"
