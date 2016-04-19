@@ -133,7 +133,7 @@ $(function() {
     $('#get-file').click(function() {
         $(this).attr('disabled', true);
         $.ajax({
-            url: 'parser',
+            url: 'https://obscure-hollows-88813.herokuapp.com',
             cache: false,
             dataType: 'json',
             processData: false, // Don't process the files
