@@ -1,10 +1,15 @@
-#!/usr/bin/python
+#!/bin/python
 # -*- coding: utf-8 -*-
 
 import xlrd
 import json
+import requests
 
-data = xlrd.open_workbook('data.xls')
+url = 'http://googledrive.com/host/0ByYeZ5yUNKAwLUpqUEUxemVjUHc/SA900_3month2015-09-11.xls'
+
+file = requests.get(url)
+
+data = xlrd.open_workbook(file_contents=file.content)
 
 table = data.sheets()[0] 
 
