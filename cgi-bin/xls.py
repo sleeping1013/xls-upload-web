@@ -5,6 +5,9 @@ import xlrd
 import json
 import requests
 
+import cgitb
+cgitb.enable()
+
 url = 'http://googledrive.com/host/0ByYeZ5yUNKAwLUpqUEUxemVjUHc/SA900_3month2015-09-11.xls'
 
 file = requests.get(url)
